@@ -1,0 +1,270 @@
+/* Estilos Globales */
+* {
+    background: #F0F4F8; /* Fondo claro y moderno */
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+/* Logo */
+.logo {
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 8%;
+}
+
+/* Main Section */
+main {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    justify-content: center;
+}
+
+/* Entrada de Texto */
+.entrada-texto {
+    resize: none;
+    margin-top: 90px;
+    color: #2C3E50; /* Color oscuro para el texto */
+    border: 1px solid #BDC3C7; /* Borde suave */
+    border-radius: 8px; /* Bordes redondeados */
+    background: #FFFFFF; /* Fondo blanco */
+}
+
+.entrada-texto::placeholder {
+    color: #7F8C8D; /* Gris claro para el placeholder */
+}
+
+.entrada-texto:focus {
+    outline: none;
+}
+
+/* Salida de Texto */
+.salida-texto {
+    resize: none;
+    margin-left: 98px;
+    padding: 20px;
+    padding-bottom: 120px;
+    height: 612px;
+    color: #2C3E50; /* Color oscuro para el texto */
+    background: #ECF0F1; /* Fondo gris claro */
+    background-image: url(img/notexto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #BDC3C7; /* Borde suave */
+    border-radius: 32px; /* Bordes redondeados */
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08); /* Sombra suave */
+}
+
+.salida-texto:focus {
+    outline: none;
+}
+
+/* Restricción */
+.restriccion {
+    color: #95A5A6; /* Gris claro */
+    font-size: 16px;
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    margin-top: 18px;
+}
+
+.encriptar {
+    color: #FFFFFF; /* Texto blanco */
+    background: #3498DB; /* Azul vibrante */
+    border: 1px solid #2980B9; /* Azul oscuro */
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.desencriptar {
+    color: #FFFFFF; /* Texto blanco */
+    background: #2ECC71; /* Verde fresco */
+    border: 1px solid #27AE60; /* Verde oscuro */
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.dinamico {
+    background: transparent;
+    margin-left: 120px;
+    margin-top: -240px;
+    width: 360px;
+    position: absolute;
+    text-align: center;
+}
+
+.texto1 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: initial;
+    background: transparent;
+}
+
+.texto2 {
+    font-size: 16px;
+    line-height: initial;
+    background: transparent;
+}
+
+.copiar {
+    color: #FFFFFF; /* Texto blanco */
+    background: #E67E22; /* Naranja vibrante */
+    border: 1px solid #D35400; /* Naranja oscuro */
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+    margin-top: 120px;
+}
+
+/* Hover efectos */
+.encriptar:hover, .desencriptar:hover, .copiar:hover {
+    background: #1F2A38; /* Azul oscuro para el hover */
+    color: #FFFFFF;
+}
+
+/* Anuncio */
+.anuncio {
+    display: none;
+    width: 300px;
+    background-color: #2C3E50; /* Azul oscuro */
+    color: #FFFFFF; /* Texto blanco */
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 80px;
+    left: 100px;
+    margin-left: -75px;
+    opacity: .6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #2C3E50; /* Azul oscuro */
+    padding: 15px;
+}
+
+.copyright {
+    color: #BDC3C7; /* Gris claro */
+    background: transparent;
+    font-size: 15px;
+    margin: 10px;
+}
+
+/* Medios de Pantalla */
+
+/* Laptop */
+@media screen and (max-width: 1366px) {
+    main {
+        margin-left: 0px;
+    }
+    .entrada-texto {
+        margin-top: 50px;
+        width: 686px;
+        height: 400px;
+    }
+    .botones, .salida-texto {
+        margin-top: 0px;
+    }
+    .salida-texto {
+        height: 550px;
+    }
+    .dinamico {
+        margin-top: -160px;
+    }
+    .copiar {
+        margin-top: 60px;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 15%;
+        margin-top: 40px;
+    }
+    main {
+        display: block;
+        margin: 0px 30px;
+    }
+    .entrada-texto {
+        margin-top: 60px;
+        width: 100%;
+        height: 700px;
+    }
+    .botones {
+        margin-top: 0px;
+    }
+    .salida-texto {
+        margin: 40px 0px;
+        width: 655px;
+        height: 300px;
+        background: #ECF0F1; /* Fondo gris claro */
+    }
+    .dinamico {
+        margin-top: -250px;
+        margin-left: 0px;
+        width: 655px;
+    }
+    .texto1 {
+        margin-bottom: .5em;
+    }
+    .copiar {
+        margin-top: 100px;
+    }
+    .anuncio {
+        margin-left: 70px;
+    }
+}
+
+/* Celular */
+@media screen and (max-width: 375px) {
+    .logo {
+        margin-top: 30px;
+        width: 30%;
+    }
+    .entrada-texto {
+        margin-top: 20px;
+        height: 340px;
+    }
+    .botones {
+        display: block;
+        margin-top: 0px;
+    }
+    .encriptar, .desencriptar {
+        width: 100%;
+    }
+    .desencriptar {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .salida-texto, .dinamico, .copiar {
+        width: 295px;
+    }
+    .dinamico {
+        margin-left: 10px;
+    }
+    .salida-texto {
+        padding: 10px;
+        padding-bottom: 120px;
+        height: 180px;
+    }
+    .anuncio {
+        width: 285px;
+        margin-left: -100px;
+    }
+}
